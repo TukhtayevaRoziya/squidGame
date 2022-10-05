@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #070d20;
+  color: #fff;
+}
+
+@layer utilities {
+  .keyframe {
+    animation: opac 0.4s;
+  }
+
+  @keyframes opac {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .z-1 {
+    z-index: 1;
+  }
+  .z-2 {
+    z-index: 2;
+  }
+  .z-3 {
+    z-index: 3;
+  }
+}
+
+.circle-effect{
+  @apply bg-squid-pink rounded-full w-11 h-11  flex items-center justify-center ;
+}
+
+.gradient{
+  @apply absolute w-full h-full top-0 left-0;
+  background: linear-gradient(220deg, #0c162c, #4d1c3d);
+  opacity: .85;
+}
