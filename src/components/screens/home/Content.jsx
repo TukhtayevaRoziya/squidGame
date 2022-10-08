@@ -6,7 +6,13 @@ import objectImg from '../../../assets/images/objects1.webp'
 const Content = () => {
   return (
     <div className="mt-28 w-1/2">
-      <img src={logoImg} alt="" className="mb-10 -ml-12" draggable={false} />
+      <img
+        src={logoImg}
+        alt=""
+        className="mb-10 -ml-12"
+        draggable={false}
+        width="600"
+      />
       <div className="flex ml-5">
         <img
           src={objectImg}
@@ -16,10 +22,10 @@ const Content = () => {
           draggable={false}
         />
         <p
-        className='text-white opacity-70 leading-8 text-lg'
-        style={{
-          maxWidth: '60%'
-        }}
+          className="text-white opacity-70 leading-8 text-lg"
+          style={{
+            maxWidth: '60%',
+          }}
         >
           Once you start the game, there is no turning back. The winner is
           alone, the loser only face the death.
