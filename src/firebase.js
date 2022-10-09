@@ -1,7 +1,6 @@
 import { getFirestore } from '@firebase/firestore'
 import { initializeApp } from 'firebase/app'
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyAHicukSf2-Wm3ucWeMrywqovypKGZuWOw",
   authDomain: "squid-game-tr.firebaseapp.com",
@@ -14,8 +13,6 @@ const firebaseConfig = {
   
 };
 
-
-// Initialize Firebase
 initializeApp(firebaseConfig);
 
 export const db = getFirestore()
