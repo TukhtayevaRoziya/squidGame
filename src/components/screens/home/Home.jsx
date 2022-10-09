@@ -9,16 +9,10 @@ import Carousel from './carousel/Carousel';
 const Home = () => {
   return (
     <Layout>
-      <div
-        style={{
-          height: '60vh',
-        }}
-      >
         <Content />
         <Carousel />
         <Soldier />
         <Details />
-      </div>
     </Layout>
   )
 }

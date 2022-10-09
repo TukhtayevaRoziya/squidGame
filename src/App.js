@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
-      </Routes>cvb
+      </Routes>
       {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
     </div>
   )
