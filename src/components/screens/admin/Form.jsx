@@ -19,6 +19,7 @@ const Form = () => {
         thumbnailPath: data.thumbnailPath,
         videoUrl: data.videoUrl,
       })
+      
     console.log(getDoc())
 
     } catch (error) {

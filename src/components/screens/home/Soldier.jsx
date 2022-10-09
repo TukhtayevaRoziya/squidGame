@@ -1,5 +1,5 @@
 import React from 'react'
-import soldierImg from '../../../assets/images/soldier.webp'
+import soldierImg from '../../../assets/images/soldier.png'
 
 const Soldier = () => {
   return (

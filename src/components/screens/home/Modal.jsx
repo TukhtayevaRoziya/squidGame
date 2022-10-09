@@ -12,6 +12,7 @@ const Modal = () => {
   }, [videoUrl, isShow, setIsShow])
 
   if (!isShow) return null
+
   return (
     <div
       ref={ref}

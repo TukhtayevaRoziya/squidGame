@@ -5,13 +5,13 @@ import objectImg from '../../../assets/images/objects1.webp'
 
 const Content = () => {
   return (
-    <div className="mt-28 w-1/2">
+    <div className="mt-20 w-1/2">
       <img
         src={logoImg}
         alt=""
         className="mb-10 -ml-12"
         draggable={false}
-        width="600"
+        width="500"
       />
       <div className="flex ml-5">
         <img

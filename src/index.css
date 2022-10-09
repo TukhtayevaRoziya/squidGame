@@ -42,6 +42,7 @@ body {
 
 .gradient{
   @apply absolute w-full h-full top-0 left-0;
+  /* height: calc(100% + 3rem); */
   background: linear-gradient(220deg, #0c162c, #4d1c3d);
   opacity: .85;
 }

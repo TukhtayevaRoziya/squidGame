@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { onSnapshot, collection, query, orderBy, doc } from 'firebase/firestore'
+import { onSnapshot, collection, query, orderBy } from 'firebase/firestore'
 import { db } from '../firebase'
 
-const useSeries = () => {
+export const useSeries = () => {
   const [useSeries, setUseSeries] = useState([])
 
   useEffect(() => {
     onSnapshot(
-      query(collection(db, 'seties'), orderBy('timestamp', 'desc')),
+      query(collection(db, 'series'), orderBy('timestamp', 'desc')),
       (snapshot) => {
         setUseSeries(
-          snapshot.docs.map((doc) => ({
+          snapshot.docs.map((doc) => (
+            
+            {
             _id: doc.id,
             ...doc.data(),
           })),
@@ -22,5 +24,3 @@ const useSeries = () => {
 
   return [useSeries, setUseSeries]
 }
-
-export default useSeries
